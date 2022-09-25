@@ -1,24 +1,8 @@
-/* make variables */
-:root {
-    --gray: #9c9c9c;
-    --grey: rgb(25, 28, 31);
-    --red: #C61E5B;
-    --darkGrey: #464D53;
-    --dark: #211e34b6;
-    --light: #D5BAC5;
-    --mixRed: linear-gradient(210.41deg, #D8055C 1.14%, #262224 100.75%);
-    --appColor: #000000;
-}
-
 .App {
     background-color: var(--appColor);
     display: flex;
     flex-direction: column;
     overflow: hidden;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
 
 .stroke-text {
@@ -42,4 +26,33 @@
 
 .btn:hover {
     cursor: pointer;
+}
+
+
+/* Mobile */
+@media (max-width:525px) {
+
+    /* Image */
+    #download .right img {
+        transform: translatex(0px) translatey(0px);
+    }
+
+    /* Programs */
+    #programs {
+        margin-top: 0px;
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    /* Testimonials */
+    #root .App .testimonials {
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+
+    /* About */
+    #about {
+        padding-bottom: 69px;
+    }
+
 }

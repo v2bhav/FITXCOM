@@ -1,69 +1,111 @@
 .About {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    gap: 2rem;
-    margin: 6rem 0;
-}
-.info {
-    display: flex;
-    justify-content: center;
-    font-family: 'Quicksand', sans-serif;
-    color: rgb(224, 221, 222);
-}
-.about-header {
-    display: flex;
     gap: 5rem;
+    background-color: rgb(12, 12, 17);
+    padding: 8rem 10rem;
+    color: white;
+}
+
+.about-head {
     font-weight: bold;
     font-size: 3rem;
-    justify-content: center;
+    text-align: center;
     color: white;
     text-transform: uppercase;
-    font-style: italic;
-}
-.about-img{
-    width: 17rem;
-}
-.about-info {
-    background-color: var(--dark);;
-    width: 35rem;
-    padding: 1rem 3rem;
-    font-size: 17px;
-    text-align: left;
-}
-.about-info h2 {
-    font-size: 32px;
-    text-transform: uppercase;
-    border-bottom: dotted 2px rgb(176, 145, 157);
-    display: inline-block;
-}
-.about-info span {
-    display: block;
+    margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
-    .info {
-        flex-direction: column;
+.about-box {
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    background-color: rgb(14, 14, 21);
+}
+
+.a-photo {
+    width: 300px;
+}
+
+.a-left p {
+    text-align: justify;
+}
+
+.about-box .a-left {
+    display: flex;
+    flex-direction: column;
+    color: #dbdada;
+    font-size: 18px;
+    line-height: 1.6em;
+    letter-spacing: 0.6px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.a-left h1 {
+    margin-bottom: 30px;
+}
+
+.about-box .a-right {
+    text-align: right;
+    padding-right: 50px;
+}
+
+@media (max-width:767px) {
+
+    .about-box {
+        grid-template-columns: 1fr;
+    }
+
+    .about-box {
+        grid-template-rows: 90.51fr !important;
+    }
+
+    .a-right {
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .a-left p {
+        font-size: 16px;
+    }
+
+    .a-left {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 493px;
+    }
+
+    .About {
         align-items: center;
     }
-    .about-img {
-        width: 360px;
-    }
-    .about-info {
-        width: 360px;
-        margin: 0;
-        padding: 0;
-    }
-    .about-info span{
-        padding:18px;
-    } 
-    
-    .about-info h2 {
-        width:360px;
-        padding: 0px 0px 20px;
-        text-align:center;
+
+}
+
+
+@media (max-width:525px) {
+
+    .About .about-box .a-right {
+        text-align: center;
+        padding-right: 0px;
     }
 
-    
+    .About .about-box .a-right img {
+        width: 250px;
+    }
+
+    .About .about-box .a-left {
+        padding-right: 80px;
+        font-size: 14px;
+        padding-left: 80px;
+    }
+
+    .About {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .App .About .about-head {
+        margin-bottom: 0px;
+    }
 }

@@ -3,6 +3,15 @@
     justify-content: space-between;
 }
 
+.hero {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.left-h .hero-buttons .btn:nth-child(1) {
+    width: 154px;
+}
+
 .left-h {
     padding: 2rem;
     padding-top: 1.5rem;
@@ -15,12 +24,12 @@
 .right-h {
     flex: 1;
     position: relative;
-    background: url("../../assets/main2.jpg");
+    background: url("../../assets/main2.png");
     background-size: cover;
 }
 
 .the-best-ad {
-    margin-top: 4rem;
+    margin-top: 2rem;
     background-color: #393d42;
     border-radius: 4rem;
     width: fit-content;
@@ -120,12 +129,15 @@
     color: black;
 }
 
+.hero .right-h .heart-rate {
+    width: 160px !important;
+}
+
 .heart-rate {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     background-color: var(--dark);
-    width: 100px;
     padding: 1rem;
     align-items: flex-start;
     border-radius: 5px;
@@ -224,6 +236,7 @@
         left: 4rem;
         top: 1px;
         scale: 0.8;
+        display: none;
     }
 
     .calories {
@@ -232,6 +245,7 @@
         left: 13rem;
         scale: 0.9;
         width: 150px;
+        display: none;
     }
 
     .calories>img {
